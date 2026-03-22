@@ -15,10 +15,6 @@ A simple Snake Game built using HTML, CSS, and JavaScript.
 - HTML
 - CSS
 - JavaScript
-
-## 📸 Preview
-(Add screenshot later)
-
 ---
 
 Made by Akshay 🚀
