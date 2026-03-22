@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Snake Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Snake Game 🐍</h1>
+<div class="hud">
+  <h2>Score: <span id="score">0</span></h2>
+  <h2>High Score: <span id="highScore">0</span></h2>
+  <h3>Speed: <span id="speedLevel">1</span></h3>
+</div>
+
+<canvas id="gameCanvas" width="400" height="400"></canvas>
+
+<div class="controls">
+  <button id="pauseBtn" onclick="togglePause()">Pause</button>
+  <button id="muteBtn" onclick="toggleMute()">🔊</button>
+  <button id="restartBtn" onclick="restartGame()" style="display:none;">Restart</button>
+</div>
+
+<p class="instructions">
+  Controls: Arrow keys / W A S D to move, P to pause. Touch devices: use buttons below.
+</p>
+
+<div class="touch-btns">
+  <button onclick="changeDirectionKeyboard('UP')">↑</button>
+  <button onclick="changeDirectionKeyboard('LEFT')">←</button>
+  <button onclick="changeDirectionKeyboard('DOWN')">↓</button>
+  <button onclick="changeDirectionKeyboard('RIGHT')">→</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
